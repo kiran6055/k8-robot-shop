@@ -1,0 +1,33 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: catalogue
+  labels:
+    name: catalogue
+    tire: MenuForRoboshop
+spec:
+  containers:
+    - name: catalogue
+      imagePullPolicy: Always
+      image: kiranprav/catalogue:v1
+      resources:
+        requests:
+          cpu: "100m"
+          memory: "150Mi"
+        limits:
+          cpu: "120m"
+          memory: "200Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalogue-service
+spec:
+  selector:
+    name: catalogue
+    tire: MenuForRoboshop
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
