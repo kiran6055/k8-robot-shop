@@ -13,8 +13,8 @@ metadata:
   name: mysql-secret
 type: Opaque
 data:
-  user: "c2hpcHBpbmc="
-  password: "c2VjcmV0"
+  user: c2hpcHBpbmc=
+  password: c2VjcmV0
 
 
 ---
