@@ -30,7 +30,7 @@ spec:
         cpu: "150m"
         memory: "150Mi"
 ---
-apiVersion:
+apiVersion: v1
 kind: Service
 metadata:
   name: cart
