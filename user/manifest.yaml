@@ -20,7 +20,7 @@ spec:
     imagePullPolicy: Always
     image: kiranprav/user:v1
     envFrom:
-      ConfigMapRef:
+    - ConfigMapRef:
         name: user-config
     resources:
       requests:
