@@ -17,7 +17,7 @@ metadata:
 spec:
   containers:
   - name: cart
-    imagePullPolicyL: Always
+    imagePullPolicy: Always
     image: kiranprav/cart:v1
     envFrom:
     - configMapRef:
