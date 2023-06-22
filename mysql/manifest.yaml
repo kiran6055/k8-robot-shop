@@ -35,14 +35,6 @@ spec:
         name: mysql-config
     - secretRef:
         name: mysql-secret
-
-    resources:
-      requests:
-        cpu: "130m"
-        memory: "180Mi"
-      limits:
-        cpu: "180m"
-        memory: "260Mi"
     ports:
       - containerPort: 3306
 
