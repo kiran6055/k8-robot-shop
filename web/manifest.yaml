@@ -10,7 +10,7 @@ spec:
   containers:
     - name: web
       imagePullPolicy: Always
-      image: kiranprav/web:v1
+      image: kiranprav/web:v2
       resources:
         requests:
           cpu: "150m"
