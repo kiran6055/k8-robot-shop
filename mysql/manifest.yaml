@@ -21,7 +21,7 @@ data:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: mysqlDB
+  name: mysql-db
   labels:
     name: mysql
     tier: Database
