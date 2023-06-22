@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-web-frontend
+  name: web-service
   labels:
     name: service-for-web-frontend
 spec:
