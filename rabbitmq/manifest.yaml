@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: rabbitmq
-lables:
+labels:
   type: rabbitmqd
   tier: db
 spec: 
