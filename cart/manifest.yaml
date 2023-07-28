@@ -6,7 +6,6 @@ metadata:
 data:
   CATALOGUE_HOST: "http://catalogue"
   REDIS_HOST: "redis"
-  
 ---
 apiVersion: v1
 kind: Pod
