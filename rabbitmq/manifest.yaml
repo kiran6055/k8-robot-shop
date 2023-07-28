@@ -3,9 +3,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: rabbitmq
-labels:
-  name: rabbitmqd
-  tier: db
+  labels:
+    name: rabbitmqd
+    tier: db
 spec: 
   containers:
   - name: rabbitmq
