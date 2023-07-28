@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: rabbitmq
 labels:
-  type: rabbitmqd
+  name: rabbitmqd
   tier: db
 spec: 
   containers:
@@ -21,7 +21,7 @@ metadata:
   name: myrabbitmq
 spec:
   selector:
-    type: rabbitmqd
+    name: rabbitmqd
     tier: db
   ports:
   - port: 5672
