@@ -8,4 +8,3 @@ COPY server.js /opt/server/
 RUN npm install
 EXPOSE 8080
 ENTRYPOINT ["node", "server.js"]
-hello this is kiran im trying my best
