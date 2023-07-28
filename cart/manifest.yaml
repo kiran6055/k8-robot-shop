@@ -6,7 +6,7 @@ metadata:
 data:
   CATALOGUE_HOST: "http://catalogue"
   REDIS_HOST: "redis"
-
+  
 ---
 apiVersion: v1
 kind: Pod
@@ -21,7 +21,15 @@ spec:
     imagePullPolicy: Always
     image: kiranprav/cart:v2
     envFrom:
- 
+    - configMapRef:
+        name: cart-config
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "130Mi"
+      limits:
+        cpu: "150m"
+        memory: "150Mi"
 ---
 apiVersion: v1
 kind: Service
